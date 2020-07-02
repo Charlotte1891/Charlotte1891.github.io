@@ -148,7 +148,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
@@ -237,6 +237,138 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/02/Introduction-of-ResNet-and-VGG/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yifan Cheng">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/charlotte.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yifan Cheng Personal Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/07/02/Introduction-of-ResNet-and-VGG/" itemprop="url">Introduction of ResNet and VGG</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-07-02T11:20:59-07:00">
+                2020-07-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>ResNet</strong> is originally designed by <a href=https://arxiv.org/pdf/1512.03385.pdf>Kaiming He et al.</a>[1] to address the notorious problem of degradation with increasing depth of networks, which means that the accuracy starts to degrade rapidly from saturation point. Since the degradation is not due to overfitting, adding more layers won’t help but will lead to even higher training error. </p>
+<p>The basic architecture of ResNet is shown in fig 1. In which, given $H(x)$ as the desired underlying mapping, $F(x)$ is introduced as residual mapping for stacked nonlinear layers, where $F(x) := H(x)-x$ (which stands for the difference between input $x$ and output of the function $H(x)$). Thus, the original mapping $H(x)$ is recase into $F(x)+x$. It’s claimed that residual mapping $F(x)$ is easier to optimize than the original, unreferenced mapping $H(x)$ because we only need to set $F(x) = 0$. </p>
+<p>![ResNet structure](/Users/charlotte/hexofolder/images/ResNet structure.png)</p>
+<p>​                                                                        Fig 1. Residual learning: a building block</p>
+<p>Now the problem is the implementation of $F(x)+x$. It can be realized by feedforward neural networks with shortcut connections, which skip one or more layers in the network. There are two kinds of shortcut, first is the identity mapping as eqn. 1 shows, another is the projection shortcut as eqn.2 shows.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\[</span><br><span class="line">  \makebox[\linewidth]&#123;$y&#x3D;F(x,&#123;W_i&#125;)+x$   (1)&#125;</span><br><span class="line">\]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\[</span><br><span class="line">  \makebox[\linewidth]&#123;$y&#x3D;F(x,&#123;W_i&#125;)+W_&#123;s&#125;x$   (2)&#125;</span><br><span class="line">\]</span><br></pre></td></tr></table></figure>
+
+<p>Kaiming He et al. has tried 3 options of shortcuts connection. </p>
+<p>(A) zero-padding shortcuts are used for increasing dimensions, and all shortcuts are parameter- free (the same as Table 2 and Fig. 4 right); (B) projec- tion shortcuts are used for increasing dimensions, and other shortcuts are identity; and (C) all shortcuts are projections.</p>
+<img src="/Users/charlotte/hexofolder/images/ResNet architecture.png" alt="ResNet architecture" style="zoom:50%;" align="left"/>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -420,7 +552,7 @@
               
                 <a href="/archives/%20%7C%7C%20archive">
               
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -637,6 +769,28 @@
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 
