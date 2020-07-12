@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Deep Learning," />
 
 
 
@@ -79,15 +79,47 @@
 
 
 
-<meta name="description" content="Time waits for no one:)">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yifan Cheng Personal Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="Abstract  In this project, given MNIST dataset, we modeled it as a multiclass classification problem where we implemented different classification algorithms. In addition, we also conducted feature vi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MNIST Image Classification">
+<meta property="og:url" content="http://yoursite.com/2020/07/12/MNIST-Image-Classification/index.html">
 <meta property="og:site_name" content="Yifan Cheng Personal Blog">
-<meta property="og:description" content="Time waits for no one:)">
+<meta property="og:description" content="Abstract  In this project, given MNIST dataset, we modeled it as a multiclass classification problem where we implemented different classification algorithms. In addition, we also conducted feature vi">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/raw_MNIST.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/Random_images.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/log_reg.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/cross_entropy.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/softmax_result.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/RSS.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/ridge.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/ridge_result.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/lasso.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/lasso_result.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/simple_NN.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/2_layer.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/simple_NN_param.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/simple_NN_compare.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/simple_NN_result.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/CNN_architecture.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/diff_architecture.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/diff_ar_box.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/SGD_accuracy.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/diff_opt.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/diff_opt_box.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/opt_accuracy.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/svm_result.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/conf_matrix_SVM.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/diff_model.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/dim_PCA.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/PCA.png">
+<meta property="og:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/t-SNE.png">
+<meta property="article:published_time" content="2020-07-12T19:09:00.000Z">
+<meta property="article:modified_time" content="2020-07-12T19:19:42.889Z">
 <meta property="article:author" content="Yifan Cheng">
+<meta property="article:tag" content="Deep Learning">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/Users/charlotte/hexofolder/source/_posts/MNIST-Image-Classification/raw_MNIST.png">
 
 
 
@@ -117,13 +149,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/07/12/MNIST-Image-Classification/"/>
 
 
 
 
 
-  <title>Yifan Cheng Personal Blog</title>
+  <title>MNIST Image Classification | Yifan Cheng Personal Blog</title>
   
 
 
@@ -142,8 +174,7 @@
     
   
 
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left 
-  page-home">
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -236,9 +267,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -268,9 +299,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/07/12/MNIST-Image-Classification/" itemprop="url">MNIST Image Classification</a></h1>
+          <h1 class="post-title" itemprop="name headline">MNIST Image Classification</h1>
         
 
         <div class="post-meta">
@@ -320,9 +349,7 @@
       
 
       
-        
-          
-            <h3>Abstract</h3>
+        <h3>Abstract</h3>
 
 <p>In this project, given MNIST dataset, we modeled it as a multiclass classification problem where we implemented different classification algorithms. In addition, we also conducted feature visualization and network diagnosis using PCA and t-SNE. Six different models including Logistic Regression (Softmax), Logistic Regression with Ridge loss, Logistic Regression with Lasso loss, simple-NN, CNN and SVM were studied and their performances were measured and compared. Among which, CNN performed the best. </p>
 <h3>I. Data</h3>
@@ -491,8 +518,6 @@
 
 <p>In this project, we implemented MNIST digit image classification using six different algorithms including Logistic Regression (Softmax), Logistic Regression with Ridge loss, Logistic Regression with Lasso loss, simple-NN, CNN and SVM. We built 9 models in total with some parameter tuning and regularization. Among all the models, CNN performs the best with highest accuracy while Softmax regression without regularization performs the worst. In general, all these algorithms can fulfill our requirements for model accuracy. However, some of the models can take 2-3 hours to train each time. Thus, we do need to consider memory and time cost for training different models, from which aspect, the simple-NN is the best. In the third part, we also conducted feature visualization using PCA and t-SNE. For future work, we think that the optimal model doesn’t only require the stable and outstanding classification ability but also the capacity to avoid suffering from the accuracy-training cost tradeoff too much.</p>
 
-          
-        
       
     </div>
     
@@ -507,247 +532,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/07/04/Intro-of-ResNet-and-VGG/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yifan Cheng">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/charlotte.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yifan Cheng Personal Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2020/07/04/Intro-of-ResNet-and-VGG/" itemprop="url">Intro of ResNet and VGG</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-07-04T15:43:21-07:00">
-                2020-07-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Deep-Learning/" rel="tag"># Deep Learning</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4>ResNet model</h4>
-
-<h5>Data</h5>
-
-<p>The main dataset used in this paper is the challenging <a href="https://arxiv.org/pdf/1409.0575.pdf" target="_blank" rel="noopener">ImageNet</a> dataset, which has become a standard. benchmark for large-scale object recognition. Also, experiments were conducted on other datasets like CIFAR-10, PASCAL and MS COCO.</p>
-<h5>Architecture</h5>
-
-<p><strong>ResNet</strong> is originally designed by <a href=https://arxiv.org/pdf/1512.03385.pdf>Kaiming He et al.</a>[1] to <strong>address the notorious problem of degradation with increasing depth of networks</strong>, which means that the accuracy starts to degrade rapidly from saturation point. Since the degradation is not due to overfitting, adding more layers won’t help but will lead to even higher training error. </p>
-<p>The basic architecture of ResNet is shown in fig 1. In which, given $H(x)$ as the desired underlying mapping, $F(x)$ is introduced as residual mapping for stacked nonlinear layers, where $F(x) := H(x)-x$ (which stands for the difference between input $x$ and output of the function $H(x)$). Thus, the original mapping $H(x)$ is recase into $F(x)+x$. It’s claimed that residual mapping $F(x)$ is easier to optimize than the original, unreferenced mapping $H(x)$ because we only need to set $F(x) = 0$. </p>
-<p><img src="ResNet structure.png" alt="ResNet structure" style="zoom:50%;" /></p>
-<p align='center'><strong>Fig 1. Residual learning: a building block</strong></p>
-
-<p>Now the problem is the implementation of $F(x)+x$. It can be realized by <strong>feedforward neural networks with shortcut connections</strong>, which skip one or more layers in the network. There are two kinds of shortcut, first is the identity mapping as eqn. 1 shows, another is the projection shortcut as eqn.2 shows.</p>
-<p>$y=F(x,{W_i})+x$    (1)</p>
-<p>$y=F(x,{W_i})+W_{s}x$    (2)</p>
-<p>Kaiming He et al. has tried 3 options of shortcuts connection. (A) zero-padding shortcuts are used for increasing dimensions, and all shortcuts are parameter-free; (B) projection shortcuts are used for increasing dimensions, and other shortcuts are identity; and (C) all shortcuts are projections. By implementing three different options on ImageNet 2012 dataset with ResNet-34, it’s clear that all three options are considerably better than the plain counterpart, while B is slightly better than A and C is marginally better than B. However, the differences are quite trivial to reveal that projection shortcuts are not essential for addressing the degradation problem for that identity mapping is sufficient.</p>
-<p>An example of ResNet model architecture used in ImageNet classification is shown below in fig 2. The solid line representing identity shortcuts can be directly used when input and output are of the same dimensinos. When the dimensions increase, shortcut options (A) and (B) have been performed with a stride of 2.</p>
-<p><img src="/Users/charlotte/hexofolder/source/_posts/Intro-of-ResNet-and-VGG/ResNet architecture.png" alt="ResNet architecture" style="zoom:50%;" /></p>
-<p align='center'><strong>Fig 2. ResNet example network architectures for ImageNet</strong></p>
-
-<p align='center'>Dotted shortcuts: increase dimensions. Solid shortcuts: identity mapping.</p>
-
-
-<h5>Results</h5>
-
-<ol>
-<li>ImageNet</li>
-</ol>
-<p><img src="results.png" alt="results"></p>
-<p align='center'><strong>Fig 3. Training error on ImageNet</strong></p>
-
-<p align='center'><strong>Table 1. Top-1 error(%, 10-crop testing) on ImageNet validation</strong></p>
-
-<p><img src="improvement.png" alt="improvement" style="zoom:50%;" /></p>
-<p align='center'><strong>Table 2. Error rates(%, 10-crop testing) on ImageNet validation</strong></p>
-
-<p><img src="VGG_error_rate.png" alt="VGG error rate" style="zoom:50%;" /></p>
-<p>As it’s shown in table 1, we can clearly see that with plain net, the deeper 34-layer has higher validation error than the shallower 18-layer net. To further explain this phenomenon, training/validation errors during the training procedure were shown in fig 3, which reveals the degradation problem that 34-layer plain net has higher training error throughout the whole training procedure. One of the possible causes is that the deep plain nets may have exponentially low convergence rates, which impact the reducing of the training error. On the contrary, the <strong>34-layer ResNet is better than the 18-layer ResNet by 2.8%</strong>. More importantly, <strong>the training error of 34-layer ResNet is not only lower but also more generalizable to the validation data</strong>, which addresses the degradation problem and obtains accuracy gains from increased depth.</p>
-<p>If we look at table 2, <strong>the 34-layer ResNet reduces the top-1 error by 3.5% compared to its plain counterpart</strong>, resulting from the successfully reduced training error. Also, the 18-layer ResNet converges faster than the plain one, where <strong>ResNet eases the optimization by providing faster convergence at the early stage</strong>.</p>
-<ol>
-<li>CIFAR-10</li>
-</ol>
-<p>![CIFAR_test_error]<img src="CIFAR_test_error.png" alt="CIFAR_test_error" style="zoom:50%;"></p>
-<p align='center'><strong>Fig 4. Classification error on CIFAR-10 test set</strong></p>
-
-<p>More studies were conducted on CIFAR-10 dataset consisting of 50K training images and 10K test images in 10 classes. All methods are with data augmentation. The authors didn’t use strong regularization such as maxout or dropout but just simply imposed regularization via deep and thin architectures by design. In table 6, the <strong>110-layer ResNet converges well and get the state-of-the-art error rates</strong>. But the 1202-layer network is shown to perform worse due to overfitting. </p>
-<ol>
-<li>Object Detection on PASCAL and MS COCO</li>
-</ol>
-<p>ResNet also has good generalization performance on object detection. The authors adopted Faster R-CNN as the detection method. Fig 5 and 6 shows the <a href="https://medium.com/@jonathan_hui/map-mean-average-precision-for-object-detection-45c121a31173" target="_blank" rel="noopener">mAP</a> (mean Average Precision) for two datasets. It’s apparent that <strong>ResNet-101 has significant improvements than VGG-16</strong> on this task.</p>
-<p><img src="map_PASCAL.png" alt="map_PASCAL" style="zoom:50%;" /></p>
-<p align='center'><strong>Fig 5. Object detection mAP (%) on PASCAL VOC 2007/2012 test sets</strong></p>
-
-<p><img src="map_COCO.png" alt="map_COCO" style="zoom:50%;" /></p>
-<p align='center'><strong>Fig 6. Object detection mAP(%) on COCO validation set</strong></p>
-
-
-
-<h5>Major takeaways</h5>
-
-<p>ResNet fixes the problem of accuracy degradation with increased network depth, not only does it achieve state-of-the-art performance but it can also ease the optimization by providing faster convergence.</p>
-<h4>VGG Model</h4>
-
-<h5>Data</h5>
-
-<p><a href="https://arxiv.org/pdf/1409.1556.pdf" target="_blank" rel="noopener">Simonyan et al. </a> use ILSVRC-2012 dataset including 1000 classes of images which is split into three sets: training (1.3M images), validation (50K images), and testing (100K images with held-out class labels).</p>
-<p>The input to ConvNets is fixed-size 224×224 RGB images, which were randomly cropped from scaled training images (one crop per image per SGD iteration). Then the crops underwent Radom horizontal flipping and random RGB color shift to further augment the training set. Ass for data preprocessing, it only includes subtractin the mean RGB value on the training set from each pixel. </p>
-<h5>Architecture</h5>
-
-<p align='center'><strong>Table 1. ConvNet configurations</strong></p>
-
-<p align='center'>The depth of configurations increases from the left to the right, convolutional layer parameters are denotes as "conv(receptive field size)-(number of channels)".</p>
-
-<p><img src="VGG_architecture.png" alt="VGG architecture" style="zoom:50%;" /></p>
-<p>Simonyan et al. have built up 6 models, which all follow the similar design and differ only in the depth from 11 to 19 weight layers. For example, VGG-11 uses 2 stacking layers of conv3-512 whileVGG-19 uses 4 layers in the last layer of blocks.</p>
-<p>Worth mentioning, Simonyan et al. use <strong>convolution filters with a very small receptive field (3×3 with stride 1)</strong> instead of relatively large ones like 11×11 with stride 4 in (Krizhevsky et al., 2012) or 7×7 with stride 2 in (Zeiler &amp; Fergus, 2013; Sermanet et al., 2014), which is pointed out by authors to make the decision function more discriminative by incorporating three non-linear rectification layers instead of a single one and also decrease the number of parameters. More info about  <a href="https://medium.com/mlreview/a-guide-to-receptive-field-arithmetic-for-convolutional-neural-networks-e0f514068807" target="_blank" rel="noopener">receptive field</a> can be found here.</p>
-<h5>Classification Experiments</h5>
-
-<p>Simonyan et al. have conducted four major experiments which are single-scale, multi-scale and multi-crop evaluation as well as ConvNet fusion.  </p>
-<p><strong>Single-scale evaluation</strong></p>
-<p>In this section, the authors used the first approach including <strong>two fixed scales (S = 256, S = 384) to set the traing scale <code>S</code>,</strong> which can be interpreted as the smallest side of an isotropically-rescaled training image from which the ConvNet input is cropped. Thus, it’s called single-scale training. </p>
-<p align='center'><strong>Table 2. ConvNet performance at a single test scale</strong></p>
-
-<p><img src="single_scale.png" alt="single scale" style="zoom:40%;" /></p>
-<p>From table 2, we can see that <strong>the local response normalisation (A-LRN) doesn’t improve the model A performance but it leads to increased memory consumption and computation time.</strong> The major purpose to use LRN is to perform a kind of ‘lateral inhibition’ by normalizing over local input regions. More info about  <a href="http://www.cs.toronto.edu/~fritz/absps/imagenet.pdf" target="_blank" rel="noopener">LRN</a> can be obtained in section 3.3.</p>
-<p>The major conclusion from the evaluation is that the classification error decreases with the increases ConvNet depth.  Notably, configuration C which contains three 1×1 convolutional layers performs worse than D which uses 3×3 convolutional layers throughout the network. This indicates that while the additional non-linearity does help (C is better than B), it is also important to capture spatial context by using conv. filters with non-trivial receptive fields (D is better than C). In addition, a net based on configuration B with each pair of 3×3 conv. layers with a single 5×4 conv. layer was measured to have 7% higher top-1 error than original B net, which confirms that <strong>a deep net with small filters outperforms a shallow net with larger filters.</strong></p>
-<p>Also, it shows that <strong>training set augmentation by scale jittering at training time is helpful for capturing multi-scale image statistics</strong> by comparing same depth net with scale jittering and with fixed smallest side. For example, as for configuration C, the top-1 and top-5 error when $S \in [256,512]$ are both lower than fixed scale ($S=256, S=384$).</p>
-<p><strong>Multi-scale evaluation</strong></p>
-<p>The second approach to setting S in this section is multi-sclae training, where each training image is individually rescaled by randomly sampling S from a certain range $[S_{min}, S_{max}]$ which is [256, 512]. This method is referred to more generally as ‘scale jittering’, which can be used to augment the training set. If interested, you can learn more about <a href="https://machinelearningmastery.com/best-practices-for-preparing-and-augmenting-image-data-for-convolutional-neural-networks/" target="_blank" rel="noopener">data augmentation and scale jittering </a>here.</p>
-<p>Several rescaled versions of test image is corresponding to different values of Q (referred to as test scale), followed by averaging the resulting class posteriors.  The results, presented in Table 3, indicate that <strong>scale jittering at test time leads to better performance</strong> (as compared to evaluating the same model at a single scale in Table 2).</p>
-<p align='center'><strong>Table 3. ConvNet performance at multiple test scales</strong></p>
-
-<p><img src="multi_scale.png" alt="multi scale" style="zoom:40%;" /></p>
-<p><strong>Multi-crop evaluation</strong></p>
-<p><strong>Multi-crop at test time</strong> is a form of data augmentation that a model uses during test time, as opposed to most data augmentation techniques that run during training time.</p>
-<p>Broadly, the technique involves:</p>
-<ul>
-<li>cropping a test image in multiple ways</li>
-<li>using the model to classify these cropped variants of the test image</li>
-<li>averaging the results of the model’s many predictions</li>
-</ul>
-<p>In this section, the authors have evaluated networks using 50 crops per scale (5×5 regular grid with 2 flips) for a total of 150 crops over 3 scales.</p>
-<p align='center'><strong>Table 4. ConvNet evaluation techniques comparison</strong></p>
-
-<p><img src="multi_crop.png" alt="multi crop" style="zoom:40%;" /></p>
-<p>As can be seen, using multiple crops performs slightly better than dense evaluation, and the two approaches are indeed complementary, as their combination outperforms each of them.</p>
-<p><strong>ConvNet fusion</strong></p>
-<p>In this section, the authors combined the outputs of several models by averaging their soft-max class posterios and got the performance increased.</p>
-<p align='center'><strong>Table 5. Multiple ConvNet fusion results</strong></p>
-
-<p><img src="convnet_fusion.png" alt="convnet fusion" style="zoom:40%;" /></p>
-<h5>Major takeaways</h5>
-
-<p>A conventional ConvNet architecture with substantially increased depth can achieve state-of-the-art performance on large-scale image classification. Many modern image classification models are built on top of this architecture called VGGnet. </p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/07/04/Intro-of-ResNet-and-VGG/" rel="next" title="Intro of ResNet and VGG">
+                <i class="fa fa-chevron-left"></i> Intro of ResNet and VGG
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -757,10 +571,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -768,6 +583,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -788,8 +607,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -844,6 +672,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">1.</span> <span class="nav-text">Abstract</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">2.</span> <span class="nav-text">I. Data</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">2.1.</span> <span class="nav-text">1.1 Dataset Introduction</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">2.2.</span> <span class="nav-text">1.2 Data Preprocessing</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">3.</span> <span class="nav-text">II. Image Classification</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">3.1.</span> <span class="nav-text">2.1 Logistic Regression</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#"><span class="nav-number">3.1.1.</span> <span class="nav-text">2.1.1 Multinomial Logistic Regression</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#"><span class="nav-number">3.1.2.</span> <span class="nav-text"> 2.1.2 Multinomial Logistic Regression with Ridge Loss</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#"><span class="nav-number">3.1.3.</span> <span class="nav-text">2.1.3 Multinomial Logistic Regression with Lasso Loss</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#"><span class="nav-number">3.1.4.</span> <span class="nav-text">2.1.4 Basic Conclusion for Logistic Regression</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">3.2.</span> <span class="nav-text">2.2 Neural Network</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#"><span class="nav-number">3.2.1.</span> <span class="nav-text">2.2.1 Simple-NN</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#"><span class="nav-number">3.2.2.</span> <span class="nav-text"> 2.2.2 CNN</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#"><span class="nav-number">3.2.2.1.</span> <span class="nav-text">1. Build Model</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#"><span class="nav-number">3.2.2.2.</span> <span class="nav-text">2. Evaluate Model</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#"><span class="nav-number">3.2.2.3.</span> <span class="nav-text">3. Model Analysis Result</span></a></li></ol></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">3.3.</span> <span class="nav-text">2.3 SVM</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">3.4.</span> <span class="nav-text">2.4 Model Comparison</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">4.</span> <span class="nav-text">III. Feature Visuallization</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">4.1.</span> <span class="nav-text">3.1 PCA</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#"><span class="nav-number">4.2.</span> <span class="nav-text">3.2 t-SNE</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#"><span class="nav-number">5.</span> <span class="nav-text">IV. Conclusion</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -977,11 +821,15 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
@@ -1034,26 +882,6 @@
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
   
 
 
